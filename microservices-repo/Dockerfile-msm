@@ -1,6 +1,6 @@
 FROM alpine-jdk:base
 WORKDIR ./files
-EXPOSE 8080
-COPY ./files/hello-microservice-message-1.0-SNAPSHOT.jar /var/lib/docker
-ADD ./files/hello-microservice-message-1.0-SNAPSHOT.jar apa.jar
+EXPOSE 8081
+COPY ./files/hello-microservice-1.0-SNAPSHOT.jar /var/lib/docker
+ADD ./files/hello-microservice-1.0-SNAPSHOT.jar apa.jar
 CMD ["java", "-jar", "apa.jar"]
