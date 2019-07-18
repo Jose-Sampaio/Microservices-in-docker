@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8-temporary
+FROM frolvlad/alpine-java
 WORKDIR ./files
 EXPOSE 8080
 COPY ./files/hello-consumer-1.0-SNAPSHOT.jar /var/lib/docker
